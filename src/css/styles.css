@@ -283,6 +283,9 @@ footer{
 .vectorTwo__2{
     display: none;
 }
+.social2{
+    display: none;
+ }
 @media (min-width: 900px) {
     .bx-menu {
         display: none;
@@ -377,6 +380,9 @@ footer{
     .social{
        display: none;
     }
+    .social2{
+        display: inline;
+     }
     .social2{
         display: flex;
         width: 300px;
