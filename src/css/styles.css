@@ -32,6 +32,9 @@ a {
     text-decoration: none;
     color: inherit;
 }
+.menu__button:hover{
+    color: var(--brown);
+}
 
 .year__bout{
     text-align: center;
@@ -48,7 +51,7 @@ a {
     height: 122px;
 }
 section{
-    min-height: 100vh;
+    min-height: 900px;
     display: flex;
     justify-content: center;
     align-items: center;
