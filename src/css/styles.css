@@ -36,16 +36,12 @@ a {
     color: var(--brown);
 }
 
-.year__bout{
+.year__about{
     text-align: center;
     
 }
-.uvm{
-    display: block;
-    width:122px; 
-    height:122Px; 
-}
-.academlo{
+
+.img__about{
     display: block;
     width: 122px;
     height: 122px;
@@ -157,6 +153,7 @@ h1{
   z-index: 0;
   position:absolute;
 }
+
 .briefcase__img2{
   position:relative;
   width:calc(100%-300px); 
@@ -165,7 +162,11 @@ h1{
   padding-top:1.3rem;
   padding-left:1rem;
   padding-right:1rem;
+  transition: transform 300ms ease;
   
+}
+.briefcase__img2:hover{
+    transform:scale(1.1)
 }
 .skill{
     padding-top: 3rem;
