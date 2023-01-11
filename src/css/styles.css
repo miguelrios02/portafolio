@@ -68,7 +68,9 @@ h1{
     z-index: 1;
 }
 .me__movil{
-    padding: 1rem;
+    padding-left: 7rem;
+    padding-right: 7rem;
+    padding-bottom: 1rem;
     z-index: 1;
 }
 .me__desk{
