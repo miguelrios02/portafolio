@@ -82,7 +82,7 @@ a {
     position:fixed;
     color: var(--white);
     top: 1rem;
-    width: 50%;
+    width: 70%;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -93,18 +93,16 @@ a {
     transition: transform 0.5s;
 }
 .menu-show {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
 }
 
 
-.bx-menu {
+.bxmenu {
     position:absolute;
-    font-size: 2rem;
+    font-size: 3rem;
     cursor: pointer;
-    
 }
-.menu__button{
-}
+
 .menu-bx_home{
     color: var(--brown);
 }
@@ -332,7 +330,7 @@ footer{
     display: none;
  }
 @media (min-width: 900px) {
-    .bx-menu {
+    .bxmenu {
         display: none;
     }
     h1{
