@@ -100,7 +100,7 @@ a {
 .obtener__cv{
     color: white;
     font-weight: 600;
-    padding: 0.5rem;
+    padding: 0.8rem;
     border-radius: 10px;
     background-color: #1F1D2C;
     border:2px solid var(--brown) ;
@@ -108,6 +108,8 @@ a {
     animation-delay: 2000ms;
     animation-name: cv;
     box-shadow: 3px 3px 2px 1px black;
+    width: 150px;
+   
 }
 @keyframes cv {
     0% {
@@ -419,6 +421,9 @@ footer{
         justify-content: space-between;
         transform: translateX(0);
         gap: 1rem;
+    }
+    .obtener__cv{
+      margin-left: 5rem;
     }
     .item:nth-child(1){
         display:grid;
