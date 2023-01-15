@@ -291,7 +291,10 @@ h1{
     grid-template-columns: repeat(3, 1fr);
     gap: 2.5rem;
     flex-wrap: wrap;
-    z-index:1;
+}
+.skill{
+    z-index: 20;
+
 }
 .img-skill {
     padding: 1rem;
@@ -315,17 +318,11 @@ h1{
   }
   
 .skill div span {
+    color: white;
     display: flex;
     justify-content: center;
-    z-index: 1;
   }
- .percentage__skill{
-    display: flex;
-    color: var(--brown);
-    font-size: 32px;
-    font-weight:600;
-    align-items: center;
-}
+ 
 .react:hover {
     transform: scale(1.2);
   }
