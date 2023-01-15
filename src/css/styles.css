@@ -91,16 +91,56 @@ a {
     gap: 1rem;
     transform: translateX(-250%);
     transition: transform 0.5s;
+    
 }
 .menu-show {
     transform: translateX(-50%);
+    
 }
-
+.obtener__cv{
+    color: white;
+    font-weight: 600;
+    padding: 0.5rem;
+    border-radius: 10px;
+    background-color: #1F1D2C;
+    border:2px solid var(--brown) ;
+    animation: move 2s infinite;
+    animation-delay: 2000ms;
+    animation-name: cv;
+    box-shadow: 3px 3px 2px 1px black;
+}
+@keyframes cv {
+    0% {
+    }
+  
+    25% {
+      transform: scale(1);
+    }
+  
+    50% {
+      transform: scale(1.1);
+    }
+  
+    90% {
+      transform: scale(1);
+    }
+  }
+.obtener__cv:hover{
+    background-color: #F1A600;
+    box-shadow: 4px 4px 2px 1px rgb(3, 3, 3);
+    transform: scale(1.2);
+}
 
 .bxmenu {
     position:absolute;
     font-size: 3rem;
+    transition: 150ms transition ease-in-out;
     cursor: pointer;
+    
+
+}
+.header__btn:hover{
+    transition: scale(1.1);
 }
 
 .menu-bx_home{
@@ -243,14 +283,40 @@ h1{
 .briefcase__img2:hover{
     transform:scale(1.1)
 }
-.skill{
+.skill__technology{
     padding-top: 3rem;
     display: grid;
-    gap: 1rem;
-    grid-template:repeat(5,60px) / 90px 200px ;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+    flex-wrap: wrap;
     z-index:1;
-
 }
+.img-skill {
+    padding: 1rem;
+    width: 150px;
+    object-fit: contain;
+    animation: move 5s infinite;
+    animation-delay: 2000ms;
+    animation-name: technology;
+  }
+  @keyframes technology {
+    0% {
+    }
+  
+    25% {
+      transform: rotateY(90deg);
+    }
+  
+    50% {
+      transform: rotateY(45deg);
+    }
+  }
+  
+.skill div span {
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+  }
  .percentage__skill{
     display: flex;
     color: var(--brown);
@@ -258,6 +324,9 @@ h1{
     font-weight:600;
     align-items: center;
 }
+.react:hover {
+    transform: scale(1.2);
+  }
 .type__skill{
     display: flex;
     font-size: 18px;
@@ -344,7 +413,7 @@ footer{
 
     .menu {
         position: fixed;
-        min-width: 900px;
+        min-width: 800px;
         height: auto;
         flex-direction: row;
         justify-content: space-between;
