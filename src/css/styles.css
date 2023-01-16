@@ -136,13 +136,13 @@ a {
 .bxmenu {
     position:absolute;
     font-size: 3rem;
-    transition: 150ms transition ease-in-out;
+    transition: 150ms transform ease-in-out;
     cursor: pointer;
     
 
 }
 .header__btn:hover{
-    transition: scale(1.1);
+    transform: scale(1.1);
 }
 
 .menu-bx_home{
@@ -379,6 +379,55 @@ justify-content: flex-end;
 .container__briefcase{
     padding-top: 2rem;
 }
+.item form{
+    width: 90%;
+    max-width: 400px;
+}
+.form__container{
+    width: 100%;
+    display:flex ;
+    gap: 1rem;
+    flex-direction: column;
+   
+}
+.seccion__form{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.seccion__form span{
+    color: red;
+}
+
+.form__input{
+    font-size: 1rem;
+    padding: .8em 1em;
+    outline: none;
+    border: none;
+    border: 1px solid black;
+    border-radius: 0.2em;
+}
+.form__input_mesage{
+    resize:none;
+    padding: 1.8em 1em;
+    margin-bottom: .5em;
+}
+.form__cta{
+    font-size: 1rem;
+    background-color: #F1A600;
+    color: #fff;
+    border: none;
+    font-weight: 300;
+    padding: 0.7em 0;
+    border-radius: 2em;
+    cursor: pointer;
+    transition: 150ms transform ease-in-out;
+}
+.form__cta:hover{
+    transform: scale(1.1);
+}
+
+
 footer{
     display: flex;
     background-color: var(--mediumDark);
