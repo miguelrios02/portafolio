@@ -69,14 +69,15 @@ a {
     padding: 0 1rem;
     position: fixed;
     width: 100%;
-    left: 0;
-    top: 0;
     z-index:4;
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
-
+.navbar__titel{
+    position:fixed; 
+    display: flex;
+}
 .menu {
     background-color: #1F1D2C;
     position:fixed;
@@ -91,13 +92,16 @@ a {
     gap: 1rem;
     transform: translateX(-250%);
     transition: transform 0.5s;
-    
 }
 .menu-show {
     transform: translateX(-50%);
     
 }
-.obtener__cv{
+.bxmenu {  
+    font-size: 3rem;
+    cursor: pointer;
+}
+.descargar__cv{
     color: white;
     font-weight: 600;
     padding: 0.8rem;
@@ -127,29 +131,10 @@ a {
       transform: scale(1);
     }
   }
-.obtener__cv:hover{
+.descargar__cv:hover{
     background-color: #F1A600;
     box-shadow: 4px 4px 2px 1px rgb(3, 3, 3);
     transform: scale(1.2);
-}
-
-.bxmenu {
-    position:absolute;
-    font-size: 3rem;
-    transition: 150ms transform ease-in-out;
-    cursor: pointer;
-    
-
-}
-.header__btn:hover{
-    transform: scale(1.1);
-}
-
-.menu-bx_home{
-    color: var(--brown);
-}
-.menu__button:hover{
-    color: var(--brown);
 }
 
 .year__about{
@@ -507,7 +492,7 @@ footer{
         transform: translateX(0);
         gap: 1rem;
     }
-    .obtener__cv{
+    .descargar__cv{
       margin-left: 5rem;
     }
     .item:nth-child(1){
